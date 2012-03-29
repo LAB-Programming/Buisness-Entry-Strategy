@@ -7,16 +7,11 @@ import java.util.Random;
  */
 public abstract class Player
 {
+    private final PlayerInfo = new PlayerInfo(this);
     
     protected static final Random RAND = new Random();
 
-    protected int winCount = 0;
-
-    protected int points = 0;
-    
-    protected int yes = 0;
-    
-    protected int no = 0;
+    private int points = 0;
 
     protected boolean lastDecision;
 
